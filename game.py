@@ -68,7 +68,7 @@ def place_marker(board, marker, position):
 
 def space_check(board, position):
     
-    if board[position] == "R":
+    if board[position] == " ":
         return True        
 
 def full_board_check(board):
@@ -92,7 +92,7 @@ if __name__ == "__main__":
     
     print(player_1+","+player_1_marker)
     print(player_2+","+player_2_marker)
-    sample_board=["R","R","R","R","R","R","R","R","R","R"]
+    sample_board=[" "," "," "," "," "," "," "," "," "," "]
     display(sample_board)
 
     if a==player_1:
@@ -160,20 +160,3 @@ if __name__ == "__main__":
                 if win_check(sample_board,player_2_marker)==True:
                     print(player_2+","+"Won")
                     sys.exit()
-                    
-
-
-
-
-
-
-    
-        
-
-
-
-
-
-    
-
-    
